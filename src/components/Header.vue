@@ -87,4 +87,18 @@
     }
    
 
+    @media(max-width: 1000px){
+        header{
+            width: 100%;
+            margin: 1rem auto;
+            justify-content: center;
+        }
+        .button-profile{
+            display: none;
+        }
+        div{
+            display: none;
+        }
+    }
+
 </style>
