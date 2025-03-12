@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <span>CONTANT</span>
+        <span>CONTACT</span>
         <div>
             <a href="">Whatsapp</a>
             <a href="">Email</a>
@@ -21,7 +21,7 @@
         height: 50vh;
         background: #000;
 
-        width: 100%;
+        width: 100vw;
         display: flex;
         align-items: center;
         flex-direction: column;

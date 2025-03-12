@@ -1,0 +1,55 @@
+{
+
+    "id_work_highlights": [
+        1,2
+    ],
+
+    "work": [
+        {
+            "id": 1,
+            "title": "Anime.Online",
+            "pathIMG": "2312231312.png",
+            "Category": "Figma"
+        },
+        {
+            "id": 2,
+            "title": "Cars",
+            "pathIMG": "9874374364.png",
+            "Category": "Code"
+        },
+        {
+            "id": "#",
+            "null": true,
+            "Category": "Figma"
+        },
+        {
+            "id": "#",
+            "null": true,
+            "Category": "Figma"
+        },
+        {
+            "id": "#",
+            "null": true,
+            "Category": "Figma"
+        },
+        {
+            "id": "#",
+            "null": true,
+            "Category": "Code"
+        },
+        {
+            "id": "#",
+            "null": true,
+            "Category": "Code"
+        },
+        {
+            "id": "#",
+            "null": true,
+            "Category": "Code"
+        }
+        
+    ]
+}
+    
+
+
