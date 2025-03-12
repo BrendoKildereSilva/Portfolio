@@ -187,7 +187,7 @@
 
     @media(max-width: 530px){
         section{
-            height: 13rem;
+            height: 20rem;
             margin-left: 0rem;
             margin-top: 2rem;
             margin-bottom: 5rem;
@@ -195,8 +195,8 @@
 
 
         .splide__slide{
-            width: 20rem !important;
-            height: 13rem !important;
+            width: 30rem !important;
+            height: 20rem !important;
         }
 
         .title{
@@ -206,6 +206,28 @@
         }
     }
 
+    @media(max-width: 350px){
+        section{
+            height: 14grem;
+            margin-left: 0rem;
+            margin-top: 2rem;
+            margin-bottom: 5rem;
+        }
+
+
+        .splide__slide{
+            width: 20rem !important;
+            height: 14rem !important;
+        }
+
+        .title{
+            font-size: 1.3rem;
+            top: -2rem;
+            left: 0.5rem;
+        }
+    }
+
+    
    
     
 
