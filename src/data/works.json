@@ -19,6 +19,7 @@
             "Mainlink": "link",
 
             "links":{
+                "Acess in figma": "aaaa"       
             },
 
             "imgs": [
@@ -40,8 +41,9 @@
 
             "Mainlink": "link",
             
-            "links":{
-            },
+            "links":[
+                "aaaa"
+            ],
 
             "imgs": [
                 "9874374364.png"

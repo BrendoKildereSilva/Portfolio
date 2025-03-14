@@ -15,14 +15,18 @@
       </div>
 
       <div class="container-info">
-        <div>
-          <p class="title"> {{ Work[0].title }} </p>
-          <span>{{ Work[0].MadeWith }} </span>
-          <p class="descrition">{{ Work[0].descrition }}</p>
-          <p v-for="(item, index) in Work[0].links" :key="index" class="link"> {{ index }} <a :href="item">Link</a></p>
+        <div> 
+            <p class="title"> {{ Work[0].title }} </p>
+            <span>{{ Work[0].MadeWith }} </span>
+
+          <div  class="info">
+            <p class="descrition">{{ Work[0].descrition }}</p>
+            <p v-for="(item, index) in Work[0].links" :key="index" class="link"> {{ index }} <a :href="item">Link</a></p>
+          </div>
+
+        </div>
 
           <a :href="Work.Mainlink" class="button_link"> Acess Work <i class="fi fi-rr-arrow-right"></i> </a>
-        </div>
       </div>
   </div>
 </template>
@@ -131,14 +135,21 @@ export default {
   .container-info{
     position: relative;
     width: 40%;
-    height: 100%;
+    flex: 1; 
     background: #0D0B0B;
   }
 
-  .container-info div{
+  .container-info div {
     width: 90%;
+    height: 100%;
     margin: 5rem auto;
   }
+
+    .container-info div .info{
+      margin: 2rem auto;
+      width: 100%;
+      height: 80%;
+    }
 
   .container-info .button_link{
     position: absolute;
@@ -248,16 +259,16 @@ export default {
   @media(max-width: 1000px){
     .container-details{
       flex-direction: column;
-      height: 150vh;
+      height: auto;
     }
     .preview-img{
       width: 100%;
-      height: 60%;
+      height: 60rem;
     }
 
     .container-info{
       width: 100%;
-      height: 40%;
+      padding-bottom: 10rem;
     }
 
     .preview-img button{
@@ -268,6 +279,29 @@ export default {
       transform: translate(-50%, -50%);
       height: 7rem;
       width: 7rem;
+    }
+  }
+
+  @media(max-width: 600px){
+    .preview-img{
+      width: 100%;
+      height: 40rem;
+    }
+
+
+    .container-details{
+      flex-direction: column;
+    }
+  }
+
+  @media(max-height: 600px){
+    .preview-img{
+      width: 100%;
+      height: 40rem;
+    }
+
+    .container-details{
+      flex-direction: column;
     }
   }
 

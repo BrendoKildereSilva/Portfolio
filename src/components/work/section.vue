@@ -111,7 +111,7 @@
 
     .button-next{
         z-index: 6;
-        right: 6rem;
+        right: 1rem;
     }
     
     .button-prev{
@@ -158,10 +158,7 @@
             right: 0rem;
         }
 
-        .button-next,
-        .button-prev{
-            font-size: 1rem;
-        }
+      
 
     }
 

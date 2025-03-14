@@ -2,11 +2,11 @@
     <footer>
         <span>CONTACT</span>
         <div>
-            <a href="">Whatsapp</a>
-            <a href="">Email</a>
+            <a target="_blank" href="https://api.whatsapp.com/send/?phone=5592996059860&text&type=phone_number&app_absent=0">Whatsapp</a>
+            <a target="_blank" href="mailto:brendokildere@gmail.com">Email</a>
             <a href="">Instagram</a>
-            <a href="">Github</a>
-            <a href="">Linkedin</a>
+            <a target="_blank" href="https://github.com/BrendoKildereSilva">Github</a>
+            <a target="_blank" href="https://www.linkedin.com/in/brendo-kildere-76a524229/">Linkedin</a>
         </div>
 
         <p>Design and development by Brendo Kildere ©.</p>
@@ -21,7 +21,7 @@
         height: 50vh;
         background: #000;
 
-        width: 100vw;
+        width: 100  vw;
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -102,14 +102,6 @@
             font-size: 3rem;
         }
     }
-    /* @media(max-width: 390px){
-        a:nth-child(5)::after{
-            display: none;
-        }
-
-        a{
-            font-size: 1rem;
-        }
-    } */
+    
 
 </style>

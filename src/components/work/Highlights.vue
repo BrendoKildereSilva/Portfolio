@@ -114,7 +114,6 @@ export default {
     .container-Highlights{
         margin: 0rem auto 5rem auto;
         width: 100vw;
-        height: 80vh;
     }
 
     .container-carousel, .splide, .splide__list, .splide__slide, .splide__track, .splide__slide img{
