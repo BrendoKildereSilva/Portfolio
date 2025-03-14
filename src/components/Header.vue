@@ -12,7 +12,8 @@
             <router-link to="/" :class="{ 'active-link': $route.path === '/' }">Home</router-link>
             <router-link to="/work" :class="{ 'active-link': $route.path.startsWith('/work') }">Work</router-link>
         </nav>
-        <div>
+
+        <div class="container-language">
             <button>PT</button>
             <button class="active">EN</button>
         </div>
@@ -23,7 +24,7 @@
 <style scoped>
     header{
         width: 90%;
-        margin: 5rem auto;
+        margin: 3rem auto;
 
         display: flex;
         justify-content: space-between;
@@ -31,6 +32,7 @@
     }
 
     .button-profile{
+        width: 20%;
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -50,18 +52,17 @@
     }
 
     nav{
+        width: 60%;
         display: flex;
-        flex-direction: row;
-        width: 20rem;
+        justify-content: center;
     }
 
     nav a {
-        padding: 1rem;
+        width: 10rem;
         text-decoration: none;
         font-size: 2rem;
         display: flex;
         justify-content: center;
-        width: 50%;
         color: #ccc;
         border-bottom: 2px solid #ccc;
     }
@@ -72,6 +73,11 @@
         
     }   
 
+    .container-language{
+        display: flex;
+        justify-content: flex-end;
+        width: 20%;
+    }
     div button{
         cursor: pointer;
         border: 0px;
@@ -90,13 +96,14 @@
     @media(max-width: 1000px){
         header{
             width: 100%;
-            margin: 1rem auto;
+            margin: 2rem auto;
             justify-content: center;
         }
         .button-profile{
             display: none;
         }
-        div{
+
+       .container-language{
             display: none;
         }
     }
