@@ -15,6 +15,13 @@ export default {
         Footer,
         Header,
         Banner
+    },
+
+    emits: ['loaded'],
+    mounted(){
+        this.$emit('loaded')
     }
+
+     
 }
 </script>

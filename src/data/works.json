@@ -16,10 +16,9 @@
                 "Figma"
             ],
 
-            "Mainlink": "link",
+            "Mainlink": "https://www.figma.com/design/RbMpVLBQyyo77FTUXW9kyH/Untitled?t=exUz585FwhwHvTdw-0",
 
             "links":{
-                "Acess in figma": "aaaa"       
             },
 
             "imgs": [
@@ -39,14 +38,18 @@
                 "Code"
             ],
 
-            "Mainlink": "link",
+            "Mainlink": "https://www.brendokildere.com/cars/",
             
-            "links":[
-                "aaaa"
-            ],
+            "links":{
+
+                "Acess in Github":"https://github.com/BrendoKildereSilva/Cars"
+            },
 
             "imgs": [
-                "9874374364.png"
+                "9874374364.png",
+                "2133541256.png",
+                "1454563655.png"
+
             ]
         },
         

@@ -25,8 +25,7 @@
           </div>
 
         </div>
-
-          <a :href="Work.Mainlink" class="button_link"> Acess Work <i class="fi fi-rr-arrow-right"></i> </a>
+          <a target="_blank" :href="Work[0].Mainlink" class="button_link"> Acess Work <i class="fi fi-rr-arrow-right"></i> </a>
       </div>
   </div>
 </template>
@@ -116,16 +115,15 @@ export default {
 
   .container-details{
     margin-top: 5rem;
-    width: 100vw;
-    height: 100vh;
     display: flex;
     color: #fff;
+
   }
 
   .preview-img{
     position: relative;
-    width: 60%;
-    height: 100%;
+    width: 60vw;
+    height: 100vh;
     background: #161616;
     display: flex;
     align-items: center;
@@ -134,7 +132,6 @@ export default {
 
   .container-info{
     position: relative;
-    width: 40%;
     flex: 1; 
     background: #0D0B0B;
   }
@@ -155,6 +152,7 @@ export default {
     position: absolute;
     bottom: 2rem;
     left: 50%;
+    text-decoration: none;
 
     display: flex;
     align-items: center;
@@ -182,7 +180,6 @@ export default {
       display: flex;
       opacity: 0;
       transition: opacity 0.3s ease-in-out, visibility 0s 1s; 
-      margin: 0.5rem;
 
   }
 
