@@ -179,9 +179,9 @@ export default {
             margin: 2rem auto 5rem auto;
         }
 
-        .container-carousel{
+        .container-Highlights{
             width: 100vw;
-            height: 40vh;
+            height: 30vh;
         }
 
         #button-next,
