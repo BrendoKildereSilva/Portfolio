@@ -1,8 +1,11 @@
 <template>
     <div class="container-3d">
    
-
+  
+    <div class="loader"  id="container_loader" v-if="container_loader == true"></div> 
     <spline-viewer id="meuSpline" url="https://prod.spline.design/mGqVdLApf6Ollvl8/scene.splinecode"></spline-viewer>   
+
+
     
         <div class="box-shadow">
             <button class="arrow-bottom">
@@ -78,27 +81,61 @@
 
 <script>
 
+
 export default {
+    data(){
+        return{
+            container_loader: true
+        }
+    },
+
     mounted(){
+        this.initSpline();
+
         const meuspline = document.getElementById("meuSpline");
-        var condicao = false
 
-        for(let i = 0; condicao == false; i++){
-            if(meuspline._logo.style.display){
-                condicao = true
-                console.log('existe')
+        if (meuspline.hasLoaded) {
+            meuspline.addEventListener("load", this.initSpline);
+        }
 
-                meuspline._logo.remove();
-                meuspline._logo.style.display = 'none'
-            }
-            else
-            {
-                meuspline._logo.style.display = "none"
-                condicao = false
-                console.log('n existe')   
-            }
+       
+    },
+
+    methods:{
+       
+        initSpline(){
+            const meuspline = document.getElementById("meuSpline");
+            meuspline._logo.remove();
+            this.container_loader = false
         }
     }
 }
 </script>
+
+
+<style scoped>
+    .loader {
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 30px;
+        animation: l1 1s linear infinite alternate;
+    }
+
+    #container_loader{
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+
+        z-index: 100;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .loader:before {
+    content:"Loading..."
+    }
+    @keyframes l1 {to{opacity: 0}}
+</style>
 
