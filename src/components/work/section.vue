@@ -42,9 +42,8 @@
         width: 100vw;
         height: 35rem;
 
-        margin-left: 5rem;
-        margin-top: 5rem;
-        margin-bottom: 15rem;
+        margin-top: 15rem;
+        margin-bottom: 10rem;
     }
 
     
@@ -86,7 +85,7 @@
         font-family: "Montserrat Alternates", sans-serif;
         position: absolute;
         font-size: 3rem;
-        top: -4rem;
+        top: -5rem;
     }
 
 
@@ -129,9 +128,6 @@
     @media(max-width: 1400px){
         section{
             height: 30rem;
-            margin-left: 5rem;
-            margin-top: 5rem;
-            margin-bottom: 5rem;
         }
 
         .splide__slide{
@@ -140,12 +136,11 @@
         }
     }
 
-    @media(max-width: 1080px){
+    @media(max-width: 1280px){
          section{
             height: 20rem;
-            margin-left: 0rem;
-            margin-top: 3rem;
-            margin-bottom: 7rem;
+            margin-top: 10rem;
+            margin-bottom: 10rem;
         }
 
         .splide__slide{
@@ -173,9 +168,8 @@
     @media(max-width: 780px){
         section{
             height: 17rem;
-            margin-left: 0rem;
-            margin-top: 5rem;
-            margin-bottom: 5rem;
+             margin-top: 7rem;
+             margin-bottom: 5rem;
         }
 
         .splide__slide{
@@ -187,16 +181,15 @@
 
     @media(max-width: 530px){
         section{
-            height: 20rem;
-            margin-left: 0rem;
-            margin-top: 2rem;
-            margin-bottom: 5rem;
+            height: 10rem;
+            margin-top: 3rem;
+            margin-bottom: 4rem;
         }
 
 
         .splide__slide{
-            width: 30rem !important;
-            height: 20rem !important;
+            width: 17rem !important;
+            height: 10rem !important;
         }
 
         .title{
@@ -206,28 +199,7 @@
         }
     }
 
-    @media(max-width: 350px){
-        section{
-            height: 14rem;
-            margin-left: 0rem;
-            margin-top: 2rem;
-            margin-bottom: 5rem;
-        }
-
-
-        .splide__slide{
-            width: 20rem !important;
-            height: 14rem !important;
-        }
-
-        .title{
-            font-size: 1.3rem;
-            top: -2rem;
-            left: 0.5rem;
-        }
-    }
-
-    
+ 
    
     
 

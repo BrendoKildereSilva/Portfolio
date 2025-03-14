@@ -18,6 +18,6 @@ export default {
 <style scoped>
     .container-category{
         width: 100vw;
-        overflow-x: hidden;
     }
+
 </style>

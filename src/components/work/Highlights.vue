@@ -114,7 +114,7 @@ export default {
     .container-Highlights{
         margin: 0rem auto 5rem auto;
         width: 100vw;
-        height: 100vh;
+        height: 80vh;
     }
 
     .container-carousel, .splide, .splide__list, .splide__slide, .splide__track, .splide__slide img{
@@ -162,7 +162,7 @@ export default {
         left: 0px;
     }
 
-    @media(max-width: 1000px){
+    @media(max-width: 1080px){
         .container-Highlights{
             width: 100vw;
             height: 50vh;
@@ -190,7 +190,7 @@ export default {
         }
     }
 
-    @media(max-height: 500px){
+    @media(max-height: 600px){
         .container-Highlights{
             width: 100vw;
             height: 100vh;
