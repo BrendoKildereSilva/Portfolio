@@ -8,42 +8,82 @@
         {
             "id": 1,
             "title": "Anime.Online",
-            "pathIMG": "2312231312.png",
-            "Category": "Figma"
+            "MadeWith": "Made in Figma",
+            "descrition": "This project is a streaming platform for anime, inspired by the experience offered by services like Netflix. I developed the layout in Figma, creating versions for both desktop and mobile, ensuring a responsive and intuitive interface. The goal was to provide a smooth and immersive navigation experience, making watching anime more enjoyable and accessible. The visual identity and the organization of elements were designed to follow a modern and functional aesthetic, resembling popular streaming platforms.",
+            "thumbnail": "2312231312.png",
+
+            "Category": [
+                "Figma"
+            ],
+
+            "Mainlink": "link",
+
+            "links":{
+            },
+
+            "imgs": [
+                "2312231312.png",
+                "5435436367.png"
+            ]
         },
+
         {
             "id": 2,
             "title": "Cars",
-            "pathIMG": "9874374364.png",
-            "Category": "Code"
+            "MadeWith": "Made in HTML | CSS | JAVASCRIPT | GSAP.JS | RESPONSIVE ",
+            "descrition": "This project is a website for a store specializing in the sale of both popular and high-performance cars. Developed with HTML, CSS, and JavaScript, the site is fully responsive, ensuring a smooth experience across all devices, whether desktop, tablet, or smartphone. Additionally, I used Motion Animation to create dynamic and engaging animations, making navigation more interactive and modern. The design was carefully crafted to showcase the vehicles in an impactful way, providing an immersive and intuitive experience for users.",
+            "thumbnail": "9874374364.png",
+
+            "Category": [
+                "Code"
+            ],
+
+            "Mainlink": "link",
+            
+            "links":{
+            },
+
+            "imgs": [
+                "9874374364.png"
+            ]
         },
+        
+      
+
+
+
+
+
+
+
+
         {
-            "id": "#",
+            "id": "",
             "null": true,
             "Category": "Figma"
         },
         {
-            "id": "#",
+            "id": "",
             "null": true,
             "Category": "Figma"
         },
         {
-            "id": "#",
+            "id": "",
             "null": true,
             "Category": "Figma"
         },
         {
-            "id": "#",
+            "id": "",
             "null": true,
             "Category": "Code"
         },
         {
-            "id": "#",
+            "id": "",
             "null": true,
             "Category": "Code"
         },
         {
-            "id": "#",
+            "id": "",
             "null": true,
             "Category": "Code"
         }

@@ -18,8 +18,8 @@
                         :key="index"
                         class="splide__slide"
                         :to="'/work/' + item.id">
-                            <img class="img-previw" :src="'/ImageDatabase/work/' + item.pathIMG" alt="">
-
+                            <img class="img-previw" :src="'/ImageDatabase/work/' + item.thumbnail" alt="">
+                                
                         </Router-link>
                         
                     </ul>
@@ -112,7 +112,7 @@ export default {
     }
 
     .container-Highlights{
-        margin: 10rem auto 5rem auto;
+        margin: 0rem auto 5rem auto;
         width: 100vw;
         height: 100vh;
     }

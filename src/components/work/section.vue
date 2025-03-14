@@ -20,7 +20,7 @@
                         :key="index"
                         :to="'/work/'+item.id"
                         >
-                            <img v-if="item.id != '#'" class="img-previw" :src="'/ImageDatabase/work/' + item.pathIMG" alt="">
+                            <img v-if="item.id != ''" class="img-previw" :src="'/ImageDatabase/work/' + item.thumbnail" alt="">
                             <div class="coming-Soon" v-else>Coming Soon</div>
                         </Router-link>          
                     </ul>
@@ -83,7 +83,7 @@
 
    
     .title{
-        font-family: "Montserrat", sans-serif;
+        font-family: "Montserrat Alternates", sans-serif;
         position: absolute;
         font-size: 3rem;
         top: -4rem;
@@ -208,7 +208,7 @@
 
     @media(max-width: 350px){
         section{
-            height: 14grem;
+            height: 14rem;
             margin-left: 0rem;
             margin-top: 2rem;
             margin-bottom: 5rem;
@@ -264,7 +264,7 @@ export default {
 
     computed: {
          Works(){
-            return DataWork.work.filter(work => work.Category === this.Category_name)
+            return DataWork.work.filter(work => work.Category.includes(this.Category_name))
         }
     },
 

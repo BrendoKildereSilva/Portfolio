@@ -10,7 +10,7 @@
         </div>
         <nav>
             <router-link to="/" :class="{ 'active-link': $route.path === '/' }">Home</router-link>
-            <router-link to="/work" :class="{ 'active-link': $route.path === '/work' }">Work</router-link>
+            <router-link to="/work" :class="{ 'active-link': $route.path.startsWith('/work') }">Work</router-link>
         </nav>
         <div>
             <button>PT</button>
@@ -100,5 +100,7 @@
             display: none;
         }
     }
+
+    
 
 </style>

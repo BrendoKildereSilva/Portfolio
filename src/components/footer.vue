@@ -52,7 +52,6 @@
     }
 
     a:hover{
-        /* font-size: 2rem; */
         text-decoration: underline;
     }
 
@@ -81,11 +80,36 @@
         footer{
             height: 80vh;
         }
+
     }
-    @media(max-width: 390px){
+
+    @media(max-width:500px){
+        a{
+            margin: 0.8rem;
+            font-size: 1.3rem;
+        }
+
+         a::after{
+            /* width: 0.1rem; */
+            right: -0.9rem;
+         }
+
+        p{
+            font-size: 1.3rem;
+        }
+
+        span{
+            font-size: 3rem;
+        }
+    }
+    /* @media(max-width: 390px){
         a:nth-child(5)::after{
             display: none;
         }
-    }
+
+        a{
+            font-size: 1rem;
+        }
+    } */
 
 </style>
