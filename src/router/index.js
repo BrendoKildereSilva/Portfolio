@@ -11,18 +11,6 @@ const router = createRouter({
       name: 'home',
       component: Home,
     },
-    {
-      path: '/Work',
-      name: 'projects',
-      component: Work,
-      children: [
-        {
-          path: ":id",
-          name: "jobdetails",
-          component: Workdetails
-        }
-      ]
-    },
   ]
 })
 
