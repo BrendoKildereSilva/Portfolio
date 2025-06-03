@@ -1,113 +1,158 @@
 <template>
     <header>
-        <div class="button-profile">
-            <img src="/photo-profile.jpg" alt="photo-profile">
 
-            <div>
-                <span>Brendo.Kildere</span>
-                <span>Online</span>
-            </div>
+        <div>
+            <h1>Desenvolvedor FullStack <br> Web Desing UX/UI</h1>
+            <a target="_blank" href="https://www.linkedin.com/in/brendokilderee/">Linkdin</a>
         </div>
-        <nav>
-            <router-link to="/" :class="{ 'active-link': $route.path === '/' }">Home</router-link>
-            <router-link to="/work" :class="{ 'active-link': $route.path.startsWith('/work') }">Work</router-link>
-        </nav>
 
-        <div class="container-language">
-            <button>PT</button>
-            <button class="active">EN</button>
+        <spline-viewer id="meuSpline" url="https://prod.spline.design/mGqVdLApf6Ollvl8/scene.splinecode"></spline-viewer>
+
+        <p>Olá, eu sou Brendo Kildere</p>
+
+        <div class="box-shadow">
         </div>
+
     </header>
 </template>
 
 
+
 <style scoped>
-    header{
-        width: 90%;
-        margin: 3rem auto;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .button-profile{
-        width: 20%;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-    }
-
-    .button-profile div{
-        display: flex;
-        flex-direction: column;
-        margin: 1rem;
-        font-size: 1.3rem;
-     }
-
-    .button-profile img{
-        height: 5rem;
-        width: 5rem;
-        border-radius: 50%;
-    }
-
-    nav{
-        width: 60%;
-        display: flex;
-        justify-content: center;
-    }
-
-    nav a {
-        width: 10rem;
-        text-decoration: none;
-        font-size: 2rem;
-        display: flex;
-        justify-content: center;
-        color: #ccc;
-        border-bottom: 2px solid #ccc;
-    }
-
-    a.active-link {
-        color:rgb(15, 15, 15);
-        border-bottom: 2px solid rgb(15, 15, 15);
-        
-    }   
-
-    .container-language{
-        display: flex;
-        justify-content: flex-end;
-        width: 20%;
-    }
-    div button{
-        cursor: pointer;
-        border: 0px;
-        font-size: 2rem;
-        margin: 1rem;
-        background: none;
-        color: #ccc;
-    }
-
-    div button.active{
-        color: #000;
-        border-bottom: 2px solid rgb(0, 0, 0);
-    }
    
 
-    @media(max-width: 1000px){
-        header{
-            width: 100%;
-            margin: 2rem auto;
-            justify-content: center;
-        }
-        .button-profile{
-            display: none;
-        }
+    header{
+        height: 100svh;
+        position: relative;
+    }
 
-       .container-language{
-            display: none;
+    header div:nth-child(1){
+        position: absolute;
+        z-index: 10;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        right: center;
+    }
+
+    h1{
+        font-weight: 600;
+        font-size: 2.9rem;
+        text-align: center;
+        white-space: nowrap;
+
+    }
+
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        width: 24.1rem;
+        height: 5.4rem;
+        border-radius: 2rem;
+        color: #fff;
+        margin: 3rem auto;
+        font-size: 2.4rem;
+        text-decoration: none;
+        font-weight: 400;
+    }
+
+    p{
+        color: #fff;
+        font-size: 2rem;
+        position: absolute;
+        z-index: 10;
+
+        top: 95%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+   
+   
+
+    .box-shadow{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        box-shadow: inset 0px -200px 100px -100px rgba(0, 0, 0, 1);
+        pointer-events: none;
+    }
+
+    #meuSpline{
+        width: 100%;
+        height: 100%;
+    }
+
+      
+
+
+    @media(max-width: 1000px){
+        .container-3d{
+            height: 90vh;
         }
     }
 
-    
+
+    @media(max-height:500px){
+         .box-shadow{
+            box-shadow: inset 0px -100px 50px -50px rgba(0, 0, 0, 1);
+        }
+
+        p{
+            font-size: ;
+        }
+    }
 
 </style>
+
+<script>
+import { StopLoading } from './Loading.vue'
+
+export default {
+    data(){
+        return{
+            container_loader: true
+        }
+    },
+
+    mounted(){
+         
+        
+        const meuspline = document.getElementById("meuSpline");
+
+        if (meuspline) {
+            var canvas = document.querySelector('canvas')
+            
+            const SplineLoading = setInterval(() => {
+                console.log(meuspline._loaded)
+
+                if(meuspline._loaded){
+                    this.initSpline();
+                    clearInterval(SplineLoading);
+                    StopLoading();
+                }
+            }, 1000 );
+        }
+
+       
+    },
+
+    methods:{
+       
+        initSpline(){
+            const meuspline = document.getElementById("meuSpline");
+            meuspline._logo.remove();
+            this.container_loader = false
+        }
+    },
+
+    emits: ['StopLoading']
+}
+</script>
+
+
+
